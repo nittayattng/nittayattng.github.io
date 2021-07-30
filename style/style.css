@@ -23,6 +23,10 @@ body {
     color: rgb(43, 43, 43);
 }
 
+.borderitem {
+    border:salmon dotted 4px;
+}
+
 .borderimg {
     margin-top: 4px;
     margin-bottom: 4px;
@@ -32,6 +36,10 @@ body {
 }
 .textcenter {
     text-align: center;
+}
+
+#fph {
+    color: dodgerblue;
 }
 
 .upperhead {
