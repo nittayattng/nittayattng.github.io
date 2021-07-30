@@ -13,11 +13,6 @@ body {
     box-sizing: border-box;
 }
 
-.marg {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .contentfont {
     font-family: 'Mitr', sans-serif;
     color: rgb(43, 43, 43);
@@ -27,9 +22,9 @@ body {
     border:salmon dotted 4px;
 }
 
+
 .borderimg {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin: 1px 0 1px;
     padding: 1.5px;
     box-sizing: border-box;
    
