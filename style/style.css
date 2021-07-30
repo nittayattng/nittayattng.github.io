@@ -13,16 +13,25 @@ body {
     box-sizing: border-box;
 }
 
+.marg {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .contentfont {
     font-family: 'Mitr', sans-serif;
     color: rgb(43, 43, 43);
 }
 
 .borderimg {
-    border: 3px dashed #222222;
-    border-radius: 5px;
+    /* border: 3px dashed #222222;
+    border-radius: 5px; */
     padding: 1.5px;
     box-sizing: border-box;
+   
+}
+.textcenter {
+    text-align: center;
 }
 
 .upperhead {
@@ -38,6 +47,7 @@ body {
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;
+
 }
 
 .mainimg:hover {
