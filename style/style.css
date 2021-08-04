@@ -23,12 +23,7 @@ body {
 }
 
 
-.borderimg {
-    margin: 1px 0 1px;
-    padding: 1.5px;
-    box-sizing: border-box;
-   
-}
+
 
 .textcenter {
     text-align: center;
@@ -46,14 +41,13 @@ body {
     text-shadow: 4px 2px #696969;
 } 
 
+.borderimg {
+    border: 3px dashed rgb(58, 58, 58);
+}
+
 .mainimg {
     display: block;
     width: 50%;
-    margin: 0 auto;
-    border-radius: 10px;
-
+    margin: 10px auto;
 }
 
-.mainimg:hover {
-    box-shadow: 0 0 2px 3px rgba(255, 226, 65, 0.5);
-}
