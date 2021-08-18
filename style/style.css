@@ -3,6 +3,14 @@ html {
     ;
 }
 
+p {
+    font-size: 15px;
+}
+
+li {
+    font-size: 15px;
+}
+
 body {
     width: 600px;
     margin: 0 auto;
@@ -21,9 +29,6 @@ body {
 .popular {
     border:salmon dotted 4px;
 }
-
-
-
 
 .textcenter {
     text-align: center;
@@ -51,3 +56,51 @@ body {
     margin: 10px auto;
 }
 
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px)  {
+    body {
+        width: 80%;
+    }
+    
+    img {
+        max-width:100%;
+        height: auto;
+    }
+
+    .upperhead {
+        font-size: 35px;
+    }
+    li {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    figcaption {
+        font-size: 60%;
+    }
+    
+}
+@media screen and (max-width: 568px) {
+    body {
+        width: 80%;
+    }
+    img {
+        max-width:100%;
+        height: auto;
+    }
+    .upperhead {
+        font-size: 20px;
+    }
+    li {
+        font-size: 80%;
+    }
+    p {
+        font-size: 80%;
+    }
+    figcaption {
+        font-size: 60%;
+    }
+   
+}
