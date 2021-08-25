@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count prime numbers</title>
+</head>
+<body>
+    <h1>Prime numbers Finder!</h1>
+    <h2>Write the web app to prompt accepting for a positive integer number</h2>
+    <section>
+        <ul>
+            <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until the valid positive integer is entered</li>
+            <li>If the entered text is a positive integer, then the app will print prime numbers that are not greater than that given positive integer</li>
+        </ul>
+
+        <h2>Hint:</h2>
+        <ol>
+            <li>you may want to use loop with label</li>
+            <li>you may want to use array with push function</li>
+        </ol>
+    </section>
+
+    
+    <script>
+
+        var posInt = prompt("Enter a positive integer");
+        
+        while (!isNormalInteger(posInt)) {
+            var posInt = prompt("Enter a positive integer");
+        }
+
+        showPrimes(posInt);
+        var sumNum;
+        
+        function isNormalInteger(str) {
+            var n = Math.floor(Number(str));
+            return n !== Infinity && String(n) === str && n >= 0;
+        }
+
+          function showPrimes (n) {
+            sumNum = `For n = ${n} prime numbers are`;
+            for (let i = 2; i <= n; i++) {
+                if (!isPrime(i)) continue;
+                sumNum += i + ",";
+            }
+            sumNum = sumNum.slice(0, -1);
+            alert(sumNum)
+        }
+
+        function isPrime(n) {
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) return false;
+            }
+
+            return true;
+        }
+        
+    </script>
+</body>
+</html>
