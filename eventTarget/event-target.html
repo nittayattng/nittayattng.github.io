@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+    <style>
+        div {
+            margin: 5px 0 5px;
+            background-color: brown;
+            height: 100px;
+            width: 25%;
+            float: left;
+        };
+    </style>
+</head>
+<body>
+    <script>
+        for (var i = 1; i <= 16; i++) {
+            var myDiv = document.createElement('div');
+            document.body.appendChild(myDiv);
+        }
+
+        function random(number) {
+            return Math.floor(Math.random() * number);
+        }
+
+        function bgChange() {       
+        var rndClr = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+         return rndClr;
+        }
+        
+        var divs = document.querySelectorAll('div');
+        let oddColor;
+        let count = 0;
+
+        for (var i = 0; i < divs.length; i++) {
+            if (i % 2 == 1) {
+                if (count < 1) {
+                    oddColor = bgChange();
+                    count += 1;
+                }
+                divs[i].onclick = function (e) {
+                    e.target.style.backgroundColor = oddColor;
+                }
+            } else {
+                divs[i].onclick = function (e) {
+                    e.target.style.backgroundColor = bgChange();
+                }
+            }
+        };
+        
+        
+    </script>
+</body>
+</html>
